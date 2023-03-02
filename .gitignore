@@ -12,3 +12,4 @@
 *.vsix
 
 Thumbs.db
+.vscode/settings.json
