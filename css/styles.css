@@ -5,6 +5,99 @@ body {
     margin: 0 auto;
 }
 
+/* Partie cocktails */
+
+#cocktails {
+    padding: 150px 20px;
+    margin: 10px 20% 10px 20%;
+    border: 1px solid white;
+    display: grid;
+    grid-template-areas:
+        "cocktail_01 cocktail_01 cocktail_01 cocktail_02 cocktail_02 cocktail_02"
+        "cocktail_03 cocktail_03 cocktail_04 cocktail_04 cocktail_05 cocktail_05";
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+#cocktails>div {
+    position: relative;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    padding: 20px;
+    border-color: #F25A29;
+    border-style: solid;
+    box-shadow: 12px 12px 2px 1px rgba(242, 90, 41, 0.5);
+}
+
+.sunmoon {
+    grid-area: cocktail_01;
+    background-image: url(../images/cocktail_01.jpg);
+    background-size: cover;
+}
+
+.mentalux {
+    grid-area: cocktail_02;
+    background: url(../images/cocktail_02.jpg);
+    background-size: cover;
+}
+
+.cocowhip {
+    grid-area: cocktail_03;
+    background: url(../images/cocktail_03.jpg);
+    background-size: cover;
+}
+
+.citrinus {
+    grid-area: cocktail_04;
+    background: url(../images/cocktail_04.jpg);
+    background-size: cover;
+}
+.spicherry {
+    grid-area: cocktail_05;
+    background: url(../images/cocktail_05.jpg);
+    background-size: cover;
+}
+
+#cocktails>div h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 800;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 5px 5px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(242, 90, 41, 1) 0%, rgba(55, 55, 55, 1) 100%);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 0.3s all;
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#cocktails img{
+    width: 140px;
+}
+
+#cocktails p {
+    font-size: 25px;
+    text-align: center;
+    border-radius: 10px;
+}
 
 /* Partie header */
 
@@ -67,4 +160,10 @@ header img {
     box-shadow: 12px 12px 2px 1px rgba(242, 90, 41, 0.5);
     color: #e0eff2;
     text-shadow: -4px 3px 0 black;
+}
+#cocktails>div:hover .overlay {
+    height: 300px;
+    padding: 20px 0;
+    z-index: 1;
+    border-radius: 10px;
 }
