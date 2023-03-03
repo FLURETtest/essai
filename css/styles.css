@@ -67,12 +67,7 @@ header img {
     color: #e0eff2;
     text-shadow: -4px 3px 0 black;
 }
-#cocktails>div:hover .overlay {
-    height: 300px;
-    padding: 20px 0;
-    z-index: 1;
-    border-radius: 10px;
-}
+
 
 /* Partie cocktails */
 
@@ -156,6 +151,13 @@ header img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+#cocktails>div:hover .overlay {
+    height: 300px;
+    padding: 20px 0;
+    z-index: 1;
+    border-radius: 10px;
 }
 
 #cocktails img{
