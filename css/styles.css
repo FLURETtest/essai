@@ -153,15 +153,15 @@ header img {
     flex-direction: column;
 }
 
+#cocktails img{
+    width: 140px;
+}
+
 #cocktails>div:hover .overlay {
     height: 300px;
     padding: 20px 0;
     z-index: 1;
     border-radius: 10px;
-}
-
-#cocktails img{
-    width: 140px;
 }
 
 #cocktails p {
